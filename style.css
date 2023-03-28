@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+
+    width: 50%;
+    max-width: 60%;
+    min-width: none;
+    border-radius: 16px;
+}
+
+.titulo-destaque {
+
+    color: #22D4FD;
+
+}
+
+body {
+
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+
+}
+
+.apresentacao {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 15%;
+
+}
+
+.apresentacao_conteudo_titulo {
+
+    width: 593px;
+    height: 168px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 56px;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+.apresentacao_conteudo_texto {
+
+    font-size: 24px;
+    
+    flex-wrap: wrap     ;
+    display: flex;
+    display: inline-block;
+
+}
+
+.apresentacao_links {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.apresentacao_links_link {
+
+    box-shadow: 10px 5px 10px rgb(44, 41, 41);
+    background-color: #22D4FD;
+    width: 280px;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    gap: 16px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 15px;
+
+}
+
+.apresentacao_conteudo {
+
+    width: 593px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
