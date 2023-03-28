@@ -1,97 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+.menu {
+  position: static;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+}
 
-* {
+/* Estilo para os itens do menu */
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
 
+/* Adicionando uma animação aos itens do menu */
+.menu a:hover {
+  transform: translateX(10px);
+  transition: all 0.2s ease-in-out;
+}
+ul{
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
 
-}
+  li {
+    float: left;
+  }
 
-img {
-
-    width: 50%;
-    max-width: 60%;
-    min-width: none;
-    border-radius: 16px;
-}
-
-.titulo-destaque {
-
-    color: #22D4FD;
-
-}
-
-body {
-
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
-
-}
-
-.apresentacao {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10% 15%;
-
-}
-
-.apresentacao_conteudo_titulo {
-
-    width: 593px;
-    height: 168px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 56px;
-    font-family: 'Krona One', sans-serif;
-
-}
-
-.apresentacao_conteudo_texto {
-
-    font-size: 24px;
-    
-    flex-wrap: wrap     ;
-    display: flex;
-    display: inline-block;
-
-}
-
-.apresentacao_links {
-
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.apresentacao_links_link {
-
-    box-shadow: 10px 5px 10px rgb(44, 41, 41);
-    background-color: #22D4FD;
-    width: 280px;
-    flex-direction: row;
+  li a {
+    display: block;
+    color: white;
     text-align: center;
-    border-radius: 16px;
-    font-size: 24px;
-    font-weight: 600;
-    gap: 16px;
-    padding: 21.5px 0;
+    padding: 14px 16px;
     text-decoration: none;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 15px;
+  }
 
-}
-
-.apresentacao_conteudo {
-
-    width: 593px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-}
+  li a:hover {
+    background-color: rgb(85, 82, 82);
+  }
+  body {
+    background: linear-gradient(to right, #f7f7f7, #a7a7a7);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 60%;
+    }
+    50% {
+      background-position: 100% 60%;
+    }
+    100% {
+      background-position: 0% 60%;
+    }
+  }
+  
